@@ -58,3 +58,8 @@ img { max-width: 100%; height: auto; }
   .card img { height: 160px; }
   .navbar .row { flex-wrap: wrap; }
 }
+.dropdown.open .menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
