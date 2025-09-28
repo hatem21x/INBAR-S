@@ -45,3 +45,16 @@ header.hero { background: linear-gradient(135deg, #111827, #1f2937); color: whit
 .back { display:inline-block; margin: 10px 0 0; font-size: 14px; text-decoration: underline; }
 .rtl { direction: rtl; }
 hr.sep { border: 0; border-top: 1px solid var(--border); margin: 16px 0; }
+/* تحسين العرض على الجوال */
+html, body { overflow-x: hidden; }
+img { max-width: 100%; height: auto; }
+
+/* قائمة أبسط للموبايل */
+@media (max-width: 600px) {
+  .container { padding: 0 12px; }
+  .hero h1 { font-size: 22px; }
+  .hero p { font-size: 14px; }
+  .cards { grid-template-columns: 1fr; }  /* بطاقة وحدة في الصف */
+  .card img { height: 160px; }
+  .navbar .row { flex-wrap: wrap; }
+}
